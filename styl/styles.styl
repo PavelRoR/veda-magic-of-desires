@@ -64,7 +64,7 @@
 iframe
 	border 0
 section
-	padding 95px 0
+	padding 95px 0 60px
 h1
 	margin 0
 h3
@@ -108,12 +108,17 @@ h3
 	font-size: 24px;
 	font-family: "RobotoSlabBold", sans-serif;
 	color: rgb(255, 254, 254);
-	line-height: 1.25;
+	line-height: 56px;
+	text-align: center;
 	&:hover
 		background-image: linear-gradient( -13deg, rgb(255,191,80) 0%, rgb(255,160,25) 100%);
 		color: rgb(41, 44, 56);
-
+		text-decoration none
+	&:focus
+		text-decoration none
+		color rgb(255, 254, 254);
 
 @import "parts/main"
 @import "parts/mail_section"
 @import "parts/for"
+@import "parts/reach"
