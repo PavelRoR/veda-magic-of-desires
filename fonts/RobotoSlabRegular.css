@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'RobotoSlabRegular';
-    src: url('fonts/RobotoSlabRegular.eot');
-    src: url('fonts/RobotoSlabRegular.eot') format('embedded-opentype'),
-         url('fonts/RobotoSlabRegular.woff2') format('woff2'),
-         url('fonts/RobotoSlabRegular.woff') format('woff'),
-         url('fonts/RobotoSlabRegular.ttf') format('truetype'),
-         url('fonts/RobotoSlabRegular.svg#RobotoSlabRegular') format('svg');
-}
