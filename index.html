@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="author" content="Master Vision"/>
-    <meta name="description" content="Бесплатный 5-ти дневный интенсив «Астрология - магия звезд. Найдите свой путь к здоровью, счастью и деньгам за 5 дней!»"/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="Бесплатный 5-ти дневный интенсив «МАГИЯ ЖЕЛАНИЙ. Притягивайте желаемые ситуации, финансы, отношения и здоровье за 5 дней!»"/>
     <meta name="robots" content="index, follow"/>
     <meta name="revisit-after" content="7 days"/>
     <meta property="og:image" content=""/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <link rel="appendix" href="/sitemap/"/>
-    <title>Бесплатный 5-ти дневный интенсив «Астрология - магия звезд. Найдите свой путь к здоровью, счастью и деньгам за 5 дней!»</title>
+    <title>Бесплатный 5-ти дневный интенсив «МАГИЯ ЖЕЛАНИЙ. Притягивайте желаемые ситуации, финансы, отношения и здоровье за 5 дней!»</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body>
@@ -50,6 +52,10 @@
             <div class="email-block">
               <input type="hidden" value="1" name="required_fields[email]"/>
               <input class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email"/>
+            </div>
+            <div class="phone-block hide">
+              <input type="hidden" value="0" name="required_fields[phone_number]"/>
+              <input class="phone" maxlength="255" name="Contact[phone_number]" type="number" placeholder="79333333333"/>
             </div>
           </div>
           <div class="col-md-3">
@@ -241,8 +247,7 @@
       <div class="container">
         <h3>План <span>интенсива</span></h3>
         <div id="plan_wrapper">
-              <div class="day_wrapper">
-                <div class="day_img"></div>
+              <div class="day_wrapper"><img class="day_img" src="img/day_1.jpg" alt="1 день"/>
                 <div class="day_description">
                   <h4>1 день</h4>
                   <h5>На заняти понадобятся: <span>Ручка, бумага, диктофон (или скачать программу)</span></h5>
@@ -255,8 +260,7 @@
                   <p class="bonus">Бонус <span>Волшебная палочка</span></p>
                 </div>
               </div>
-              <div class="day_wrapper">
-                <div class="day_img"></div>
+              <div class="day_wrapper"><img class="day_img" src="img/day_2.jpg" alt="2 день"/>
                 <div class="day_description">
                   <h4>2 день</h4>
                   <h5>На заняти понадобятся: <span>Ручка, бумага, сшить маленький белый мешочек, в него положить фасоль, лавровый лист, тыквенные семечки (всего не более 13 предметов), 3 стакана, вода, резинка аптечная или для денег</span></h5>
@@ -270,8 +274,7 @@
                   <p class="bonus">Бонус <span>привлекаем желаемое</span></p>
                 </div>
               </div>
-              <div class="day_wrapper">
-                <div class="day_img"></div>
+              <div class="day_wrapper"><img class="day_img" src="img/day_3.jpg" alt="3 день"/>
                 <div class="day_description">
                   <h4>3 день</h4>
                   <h5>На заняти понадобятся: <span>Ручка, бумага, пальто, шапка, пылесос</span></h5>
@@ -285,8 +288,7 @@
                   <p class="bonus">Бонус <span>ритуал, чтобы все получилось</span></p>
                 </div>
               </div>
-              <div class="day_wrapper">
-                <div class="day_img"></div>
+              <div class="day_wrapper"><img class="day_img" src="img/day_4.jpg" alt="4 день"/>
                 <div class="day_description">
                   <h4>4 день</h4>
                   <h5>На заняти понадобятся: <span>наручные часы, ручка, бумага</span></h5>
@@ -299,8 +301,7 @@
                   <p class="bonus">Бонус <span>для открытия тех областей жизни, в которых у вас ступор</span></p>
                 </div>
               </div>
-          <div class="day_wrapper">
-            <div class="day_img"></div>
+          <div class="day_wrapper"><img class="day_img" src="img/day_5.jpg" alt="5 день"/>
             <div class="day_description">
               <h4>5 день</h4>
               <h5>На заняти понадобятся: <span>Ручка, бумага, резинка от мешочка гри-гри, предметы вредной привычки, иголка с красной ниткой</span></h5>
@@ -340,15 +341,69 @@
         </div>
       </div><a class="button" href="/veda-magic-of-desires/partership" target="_blank">Партнерская программа</a>
     </section>
+    <section id="testimonials">
+      <div class="container">
+        <h3><span>Отзывы </span>учеников</h3>
+        <div class="col-md-6 col-sm-6">
+          <div class="owl-carousel" id="carousel_text">
+            <div class="item"><img src="img/testim_1.jpg" alt="Отзыв 1"/></div>
+            <div class="item"><img src="img/testim_2.jpg" alt="Отзыв 2"/></div>
+            <div class="item"><img src="img/testim_3.jpg" alt="Отзыв 3"/></div>
+            <div class="item"><img src="img/testim_4.jpg" alt="Отзыв 4"/></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="owl-carousel owl-theme" id="carousel_video">
+            <div class="item video_wrapper" data-youtube="ahjDjZpl088"><img src="img/video_testim_1.jpg" alt="Видео-отзыв 1"/></div>
+            <div class="item video_wrapper" data-youtube="cgAH_CIFGoo"><img src="img/video_testim_2.jpg" alt="Видео-отзыв 2"/></div>
+            <div class="item video_wrapper" data-youtube="F4lLpPSd6iA"><img src="img/video_testim_3.jpg" alt="Видео-отзыв 3"/></div>
+            <div class="item video_wrapper" data-youtube="8HH6ugeVNu0"><img src="img/video_testim_4.jpg" alt="Видео-отзыв 4"/></div>
+            <div class="item video_wrapper" data-youtube="1OVEEi7YmLk"><img src="img/video_testim_5.jpg" alt="Видео-отзыв 5"/></div>
+            <div class="item video_wrapper" data-youtube="LtzEbAJVvds"><img src="img/video_testim_6.jpg" alt="Видео-отзыв 6"/></div>
+            <div class="item video_wrapper" data-youtube="SA_biPb7WLA"><img src="img/video_testim_7.jpg" alt="Видео-отзыв 7"/></div>
+            <div class="item video_wrapper" data-youtube="pfJe7bOxj20"><img src="img/video_testim_8.jpg" alt="Видео-отзыв 8"/></div>
+            <div class="item video_wrapper" data-youtube="fYREJPTN-3s"><img src="img/video_testim_9.jpg" alt="Видео-отзыв 9"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer id="footer">
       <div class="continer">
         <p>ИП Кудряшов Александр Анатольевич г. Москва, Новокуркинское шоссе, 27 ИНН 720410077658 ОГРН 315723200065100 </p><a id="conditions" href="http://mastervision.su/oferta.docx">Условия возврата денежных средств</a>
       </div>
     </footer>
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModalForm">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-body">
+            <form class="form_newsletter" id="modalForm" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+              <h3 class="infront">Запишись сейчас и получи бонус!</h3>
+              <p class="infront_submit hide"></p>
+              <p class="infront">“название бонуса"</p>
+              <p class="span_phone hide"></p>
+              <div class="email-block">
+                <input type="hidden" value="1" name="required_fields[email]"/>
+                <input class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email"/>
+              </div>
+              <div class="phone-block hide">
+                <input type="hidden" value="0" name="required_fields[phone_number]"/>
+                <input class="phone" maxlength="255" name="Contact[phone_number]" type="number" placeholder="79333333333"/>
+              </div>
+              <button class="button" type="submit">Записаться</button><!--Обязательный параметр. Не удалять и не изменять!-->
+              <input type="hidden" value="292" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
+              <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://yastatic.net/browser-updater/v1/script.js"></script>
     <script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang": "ru", "browsers": {"yabrowser": "15.10", "chrome": "52", "ie": "10", "opera": "40", "safari": "8", "fx": "47", "iron": "35", "flock": "Infinity", "palemoon": "25", "camino": "Infinity", "maxthon": "4.5", "seamonkey": "2.3", "theme": "blue"}});</script><!--Yandex.Metrika counter-->

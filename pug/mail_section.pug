@@ -12,6 +12,9 @@ section#mail_section
 					.email-block
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+					.phone-block.hide
+						input(type="hidden" value="0" name="required_fields[phone_number]")
+						input(class="phone" maxlength="255" name="Contact[phone_number]" type="number" placeholder="79333333333")
 			.col-md-3
 				button(type="submit").button Записаться
 				<!--Обязательный параметр. Не удалять и не изменять!-->
