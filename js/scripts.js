@@ -37,12 +37,12 @@ $(document).ready(function() {
     });
     $(".owl-carousel").owlCarousel({
     	navigation : true,
-    	navigationText: ['назад', 'Вперед'],
-        slideSpeed: 3000,
+    	navigationText: ['Назад', 'Вперед'],
+        slideSpeed: 300,
         goToFirst: true,
-        goToFirstSpeed: 1000,
+        goToFirstSpeed: 100,
         pagination: true,
-        paginationSpeed: 400,
+        paginationSpeed: 200,
         items: 1,
         itemsDesktop: false,
         itemsDesktopSmall: false,
