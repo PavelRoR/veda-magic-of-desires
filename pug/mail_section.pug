@@ -1,0 +1,21 @@
+section#mail_section
+	.container
+		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").row.form_newsletter
+			.col-md-3
+				h3.infront Запишись сейчас  и получи бонус!
+				p.infront_submit.hide
+				
+			.col-md-3
+				p.infront «Название бонуса две строки»
+				p.span_phone.hide
+			.col-md-3
+					.email-block
+						input( type="hidden" value="1" name="required_fields[email]")
+						input(class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+			.col-md-3
+				button(type="submit").button Записаться
+				<!--Обязательный параметр. Не удалять и не изменять!-->
+				input(type="hidden" value="301" name="Contact[id_newsletter]")
+				<!--API код канала рекламы-->
+				input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
+		.clfix

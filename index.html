@@ -35,6 +35,32 @@
         </div>
       </div>
     </section>
+    <section id="mail_section">
+      <div class="container">
+        <form class="row form_newsletter" action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results">
+          <div class="col-md-3">
+            <h3 class="infront">Запишись сейчас  и получи бонус!</h3>
+            <p class="infront_submit hide"></p>
+          </div>
+          <div class="col-md-3">
+            <p class="infront">«Название бонуса две строки»</p>
+            <p class="span_phone hide"></p>
+          </div>
+          <div class="col-md-3">
+            <div class="email-block">
+              <input type="hidden" value="1" name="required_fields[email]"/>
+              <input class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email"/>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <button class="button" type="submit">Записаться</button><!--Обязательный параметр. Не удалять и не изменять!-->
+            <input type="hidden" value="301" name="Contact[id_newsletter]"/><!--API код канала рекламы-->
+            <input type="hidden" value="0" name="Contact[id_advertising_channel_page]"/>
+          </div>
+        </form>
+        <div class="clfix"></div>
+      </div>
+    </section>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
